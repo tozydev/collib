@@ -9,6 +9,7 @@ dependencies {
 
     api(platform(libs.kotlin.bom))
     api(libs.kotlin.stdlib)
+    api(libs.kotlin.reflect)
     api(libs.kotlinx.datetime)
 
     api(platform(libs.kotlinx.coroutines.bom))
