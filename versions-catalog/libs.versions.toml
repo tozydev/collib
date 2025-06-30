@@ -1,0 +1,56 @@
+[versions]
+### Gradle plugins
+paper-infra = "0.2.0-SNAPSHOT"
+
+### Database drivers
+mariadb = "3.5.3"
+h2 = "2.3.232"
+postgresql = "42.7.7"
+mysql = "9.3.0"
+sqlite = "3.50.1.0"
+
+### Paper plugin API
+item-nbt-api = "2.15.0"
+placeholderapi = "2.11.6"
+protocollib = "5.3.0"
+vault = "1.7.1"
+luckperms = "5.5"
+
+### Paper plugin libraries
+commandapi = "10.1.0"
+
+### Repositories
+repository-codemc = "https://repo.codemc.io/repository/maven-public/"
+repository-extendedclip = "https://repo.extendedclip.com/releases/"
+repository-dmulloy2 = "https://repo.dmulloy2.net/repository/public/"
+repository-jitpack = "https://jitpack.io"
+
+[libraries]
+### Database drivers
+database-driver-mariadb = { module = "org.mariadb.jdbc:mariadb-java-client", version.ref = "mariadb" }
+database-driver-h2 = { module = "com.h2database:h2", version.ref = "h2" }
+database-driver-postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+database-driver-mysql = { module = "com.mysql:mysql-connector-j", version.ref = "mysql" }
+database-driver-sqlite = { module = "org.xerial:sqlite-jdbc", version.ref = "sqlite" }
+
+### Paper plugin API
+# NBTAPI plugin, need "https://repo.codemc.io/repository/maven-public/" in repositories
+plugin-item-nbt-api = { module = "de.tr7zw:item-nbt-api-plugin", version.ref = "item-nbt-api" }
+# PlaceholderAPI plugin, need "https://repo.extendedclip.com/releases/" in repositories
+plugin-placeholderapi = { module = "me.clip:placeholderapi", version.ref = "placeholderapi" }
+# ProtocolLib plugin, need "https://repo.dmulloy2.net/repository/public/" in repositories
+plugin-protocollib = { module = "com.comphenix.protocol:ProtocolLib", version.ref = "protocollib" }
+# Vault plugin, need "https://jitpack.io" in repositories
+plugin-vault = { module = "com.github.MilkBowl:VaultAPI", version.ref = "vault" }
+# LuckPerms plugin
+plugin-luckperms = { module = "net.luckperms:api", version.ref = "luckperms" }
+
+### Paper plugin libraries
+commandapi-bukkit-shade-mojang-mapped = { module = "dev.jorel:commandapi-bukkit-shade-mojang-mapped", version.ref = "commandapi" }
+commandapi-bukkit-kotlin = { module = "dev.jorel:commandapi-bukkit-kotlin", version.ref = "commandapi" }
+
+[plugins]
+paper-infra-java = { id = "vn.id.tozydev.paper-infra.java", version.ref = "paper-infra" }
+paper-infra-kotlin = { id = "vn.id.tozydev.paper-infra.kotlin", version.ref = "paper-infra" }
+paper-infra-paper = { id = "vn.id.tozydev.paper-infra.paper", version.ref = "paper-infra" }
+paper-infra-shadow = { id = "vn.id.tozydev.paper-infra.shadow", version.ref = "paper-infra" }
