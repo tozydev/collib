@@ -27,6 +27,14 @@ repository-jitpack = "https://jitpack.io"
 repository-vela-snapshots = "https://vela.tozydev.id.vn/snapshots/"
 repository-vela-releases = "https://repo.tozydev.id.vn/releases/"
 
+### paper-api versions
+paper-api-latest = "1.21.6-R0.1-SNAPSHOT"
+paper-api-v1x21x6 = "1.21.6-R0.1-SNAPSHOT"
+
+### Minecarft versions
+minecraft-latest = "1.21.6"
+minecraft-v1x21x6 = "1.21.6"
+
 [libraries]
 ### Database drivers
 database-driver-mariadb = { module = "org.mariadb.jdbc:mariadb-java-client", version.ref = "mariadb" }
