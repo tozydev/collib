@@ -24,6 +24,8 @@ repository-codemc = "https://repo.codemc.io/repository/maven-public/"
 repository-extendedclip = "https://repo.extendedclip.com/releases/"
 repository-dmulloy2 = "https://repo.dmulloy2.net/repository/public/"
 repository-jitpack = "https://jitpack.io"
+repository-vela-snapshots = "https://vela.tozydev.id.vn/snapshots/"
+repository-vela-releases = "https://repo.tozydev.id.vn/releases/"
 
 [libraries]
 ### Database drivers
